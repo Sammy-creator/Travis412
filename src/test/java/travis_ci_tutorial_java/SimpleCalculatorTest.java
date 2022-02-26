@@ -31,6 +31,12 @@ public class SimpleCalculatorTest {
 	}
 	
 	@Test
+	public void testDivideNotEqual() {
+		SimpleCalculator calc = new SimpleCalculator();
+		assertNotEquals(calc.divide(10, 2), 2);
+	}
+	
+	@Test
 	public void testModulus() {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.modulus(10, 2), 0);
