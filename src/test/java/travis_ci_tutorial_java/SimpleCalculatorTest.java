@@ -29,4 +29,10 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.divide(10, 2), 5);
 	}
+	
+	@Test
+	public void testModulus() {
+		SimpleCalculator calc = new SimpleCalculator();
+		assertEquals(calc.modulus(10, 2), 0);
+	}
 }
